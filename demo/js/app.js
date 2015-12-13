@@ -16,7 +16,7 @@ app.controller('controller', ['$scope', 'flickrFactory', function($scope, flickr
     });
 
     flickrFactory.getImagesByTags({
-        tags:"soccer,tennis", // username converter: http://idgettr.com/
+        tags:"fcbayern",
         tagmode:"any",
         lang:"de-de", // (optional) https://www.flickr.com/services/feeds/
     }).success(function(_data){
