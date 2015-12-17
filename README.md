@@ -44,7 +44,7 @@ flickrFactory.getImagesFromUserById({
 ```js
 flickrFactory.getImagesByTags({
     tags:"<TAG_1>,<TAG_2>",
-    tagmode:"<TAG_MODE>", // Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
+    tagmode:"<TAG_MODE>", // (optional) Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
     lang:"<LANGUAGE>", // (optional) https://www.flickr.com/services/feeds/
 }).success(function(_data){
     //on success
