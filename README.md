@@ -23,9 +23,9 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 flickrFactory.getImagesFromUserById({
     id:"<USER_ID>", // username converter: http://idgettr.com/
     lang:"<LANGUAGE>", // (optional) https://www.flickr.com/services/feeds/
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -34,9 +34,9 @@ flickrFactory.getImagesFromUserById({
 flickrFactory.getImagesFromUserById({
     ids:"<USER_ID_1>,<USER_ID_2>", // username converter: http://idgettr.com/
     lang:"<LANGUAGE>", // (optional) https://www.flickr.com/services/feeds/
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -46,9 +46,9 @@ flickrFactory.getImagesByTags({
     tags:"<TAG_1>,<TAG_2>",
     tagmode:"<TAG_MODE>", // (optional) Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
     lang:"<LANGUAGE>", // (optional) https://www.flickr.com/services/feeds/
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
