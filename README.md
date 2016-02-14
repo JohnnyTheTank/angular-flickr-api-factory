@@ -1,5 +1,8 @@
 **angular-flickr-api-factory** is an angularjs module with a flickr api factory.
 
+[![npm version](https://badge.fury.io/js/angular-flickr-api-factory.png)](https://badge.fury.io/js/angular-flickr-api-factory)
+[![Bower version](https://badge.fury.io/bo/angular-flickr-api-factory.png)](https://badge.fury.io/bo/angular-flickr-api-factory)
+
 Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 
 ## Usage
