@@ -1,6 +1,6 @@
 /**
     @name: angular-flickr-api-factory 
-    @version: 0.5.0 (06-01-2016) 
+    @version: 0.5.0 (23-02-2016) 
     @author: Jonathan Hornung 
     @url: https://github.com/JohnnyTheTank/angular-flickr-api-factory#readme 
     @license: MIT
@@ -55,7 +55,7 @@ angular.module("jtt_flickr", [])
         this.fillDataInObjectByList = function (_object, _params, _list) {
 
             angular.forEach(_list, function (value, key) {
-                if (typeof _params[value] !== "undefined") {
+                if (angular.isDefined(_params[value])) {
                     _object.object[value] = _params[value];
                 }
             });
@@ -64,9 +64,6 @@ angular.module("jtt_flickr", [])
         };
 
         this.getNew = function (_type, _params) {
-
-            var defaultLimit = 20;
-
             var flickrSearchData = {
                 object: {
                     jsoncallback:'JSON_CALLBACK',
