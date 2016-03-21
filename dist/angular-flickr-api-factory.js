@@ -1,6 +1,6 @@
 /**
     @name: angular-flickr-api-factory 
-    @version: 0.5.0 (23-02-2016) 
+    @version: 0.5.1 (21-03-2016) 
     @author: Jonathan Hornung 
     @url: https://github.com/JohnnyTheTank/angular-flickr-api-factory#readme 
     @license: MIT
@@ -49,7 +49,7 @@ angular.module("jtt_flickr", [])
     }])
     .service('flickrSearchDataService', function () {
         this.getApiBaseUrl = function (_params) {
-            return "http://api.flickr.com/services/feeds/photos_public.gne";
+            return "https://api.flickr.com/services/feeds/photos_public.gne";
         };
 
         this.fillDataInObjectByList = function (_object, _params, _list) {

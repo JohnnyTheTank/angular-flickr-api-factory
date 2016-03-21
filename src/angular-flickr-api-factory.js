@@ -42,7 +42,7 @@ angular.module("jtt_flickr", [])
     }])
     .service('flickrSearchDataService', function () {
         this.getApiBaseUrl = function (_params) {
-            return "http://api.flickr.com/services/feeds/photos_public.gne";
+            return "https://api.flickr.com/services/feeds/photos_public.gne";
         };
 
         this.fillDataInObjectByList = function (_object, _params, _list) {
